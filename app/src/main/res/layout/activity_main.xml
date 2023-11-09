@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.myroomapp.room.viewmodel.CollegeViewModel" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Details:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+      />
+        <EditText
+            android:id="@+id/studentame"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:background="@color/white"
+            />
+        <EditText
+            android:id="@+id/studentcourse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Course name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:background="@color/white"
+
+         app:cornerRadius="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TeacherDetails:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/teacherame"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:background="@color/white"
+            />
+        <EditText
+            android:id="@+id/teachercourse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Course taken"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:background="@color/white"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD"
+            app:cornerRadius="5dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="List"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

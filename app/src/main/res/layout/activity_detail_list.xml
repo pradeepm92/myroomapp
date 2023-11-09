@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.myroomapp.room.viewmodel.CollegeViewModel" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".DetailListActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/spinner_student"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:itemCount="4"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/teacher_student"
+        android:padding="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getdetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Details"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+    </ScrollView>
+</layout>

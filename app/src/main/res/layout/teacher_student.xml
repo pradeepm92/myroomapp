@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Studentname:"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/studentname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course name:"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/coursename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher name:"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/teachername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>
